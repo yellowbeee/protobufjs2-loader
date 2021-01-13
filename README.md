@@ -1,5 +1,5 @@
 # protobufjs2-loader
-Webpack loader to translate .proto definitions to [ProtoBuf.js]((https://github.com/dcodeIO/ProtoBuf.js/)) modules. Equivalent to running your definitions through the [pbjs CLI](http://protobufjs.github.io/protobuf.js/index.html#pbjs-for-javascript).
+Webpack loader to translate .proto definitions to [ProtoBuf.js](https://github.com/dcodeIO/ProtoBuf.js/) modules. Equivalent to running your definitions through the [pbjs CLI](http://protobufjs.github.io/protobuf.js/index.html#pbjs-for-javascript).
 
 
 
