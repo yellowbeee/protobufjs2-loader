@@ -1,6 +1,6 @@
 {
   "name": "protobufjs2-loader",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Webpack loader to translate .proto definitions to ProtoBuf.js modules",
   "main": "index.js",
   "scripts": {
