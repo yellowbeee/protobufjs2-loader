@@ -1,6 +1,6 @@
 {
   "name": "protobufjs2-loader",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Webpack loader to translate .proto definitions to ProtoBuf.js modules",
   "main": "index.js",
   "scripts": {
@@ -21,7 +21,7 @@
     "url": "https://github.com/yellowbeee/protobufjs2-loader/issues"
   },
   "homepage": "https://github.com/yellowbeee/protobufjs2-loader#readme",
-  "devDependencies": {
+  "dependencies": {
     "loader-utils": "^2.0.0",
     "protobufjs": "^6.10.2"
   }

@@ -43,8 +43,37 @@ config.module
     .end()
 ```
 
+## Examples
+
+### Using .proto files
+
+```js
+// src/proto/awesome.proto
+package awesomepackage;
+syntax = "proto3";
+
+message AwesomeMessage {
+    string awesome_field = 1; // becomes awesomeField
+}
+```
+
 ```js
 // index.js
 
-import PB from 'src/proto/test.proto'
+import PB from 'src/proto/awesome.proto'
+
+const AwesomeMessage = PB.lookup('awesomepackage.AwesomeMessage')
+
+// Exemplary payload
+var payload = { awesomeField: "AwesomeString" };
+
+// Create a new message
+var message = AwesomeMessage.create(payload);
+
+// Encode a message to an Uint8Array (browser) or Buffer (node)
+var buffer = AwesomeMessage.encode(message).finish();
+
+// Decode an Uint8Array (browser) or Buffer (node) to a message
+var message = AwesomeMessage.decode(buffer);
+
 ```
