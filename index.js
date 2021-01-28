@@ -11,7 +11,6 @@ module.exports = function (source) {
     loaderOptions,
   )
 
-  console.log(this.resourcePath)
   pbjs.main(['--target', options.target, this.resourcePath], (err, result) => {
     if (err) {
       callback(err)
@@ -19,5 +18,4 @@ module.exports = function (source) {
       callback(null, result)
     }
   })
-  return source
 }
